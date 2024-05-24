@@ -1,7 +1,6 @@
-/* eslint-disable camelcase */
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 import HomeCard from './HomeCard';
@@ -13,6 +12,7 @@ import { Textarea } from './ui/textarea';
 import ReactDatePicker from 'react-datepicker';
 import { useToast } from './ui/use-toast';
 import { Input } from './ui/input';
+import styles from './HomeCard.module.css'; // Import the CSS module
 
 const initialValues = {
   dateTime: new Date(),
@@ -76,6 +76,7 @@ const MeetingTypeList = () => {
         title="New Meeting"
         description="Start an instant meeting"
         handleClick={() => setMeetingState('isInstantMeeting')}
+        className="hidden md:flex"
       />
       <HomeCard
         img="/icons/join-meeting.svg"
@@ -95,7 +96,7 @@ const MeetingTypeList = () => {
         img="/icons/recordings.svg"
         title="View Recordings"
         description="Meeting Recordings"
-        className="bg-yellow-1"
+        className="hidden md:flex bg-yellow-1"
         handleClick={() => router.push('/recordings')}
       />
 

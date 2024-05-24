@@ -110,3 +110,14 @@
     width: 100%;
   }
 }
+/* HomeCard.module.css */
+
+.hideOnMobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hideOnMobile {
+    display: block;
+  }
+}
