@@ -12,7 +12,6 @@ import { Textarea } from './ui/textarea';
 import ReactDatePicker from 'react-datepicker';
 import { useToast } from './ui/use-toast';
 import { Input } from './ui/input';
-import styles from './HomeCard.module.css'; // Import the CSS module
 
 const initialValues = {
   dateTime: new Date(),
