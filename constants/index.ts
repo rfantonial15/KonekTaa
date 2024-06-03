@@ -4,21 +4,29 @@ export const sidebarLinks = [
     route: '/',
     label: 'Home',
   },
-
   {
     imgURL: '/icons/upcoming.svg',
     route: '/upcoming',
     label: 'Upcoming',
+    className: 'hideOnMobile'
   },
   {
     imgURL: '/icons/previous.svg',
     route: '/previous',
     label: 'Previous',
+    className: 'hideOnMobile'
   },
   {
     imgURL: '/icons/Video.svg',
     route: '/recordings',
     label: 'Recordings',
+    className: 'hideOnMobile'
+  },
+  {
+    imgURL: '/icons/add-personal.svg',
+    route: '/personal-room',
+    label: 'Personal Room',
+    className: 'hideOnMobile'
   },
 ];
 
