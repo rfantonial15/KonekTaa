@@ -99,6 +99,54 @@
   animation: show 0.7s forwards linear;
 }
 
+/* global styles or in your Tailwind config */
+body {
+  background-color: #1a202c; /* Dark background for the entire application */
+}
+
+section {
+  padding: 2rem; /* Add some padding to the section */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4a5568; /* Darker background for cards */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-container:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  color: #cbd5e0;
+}
+
+
 @keyframes show {
   0% {
     animation-timing-function: ease-in;

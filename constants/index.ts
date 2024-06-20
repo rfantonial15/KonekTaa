@@ -27,6 +27,11 @@ export const sidebarLinks = [
     route: '/personal-room',
     label: 'Personal Room',
     className: 'hideOnMobile'
+  },  {
+    imgURL: '/icons/join-meeting.svg',
+    route: '/contact',
+    label: 'Contact',
+    className: 'hideOnMobile'
   },
 ];
 
