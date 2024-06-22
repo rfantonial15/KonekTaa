@@ -1,7 +1,7 @@
 // components/Card.js
 import React from 'react';
 
-const Card = ({ name, email, course, imgURL }) => {
+const Card = ({ name, email, course, imgURL, details }) => {
   return (
     <div className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 text-white">
       <div className="flex items-center justify-center mb-4">
@@ -13,6 +13,9 @@ const Card = ({ name, email, course, imgURL }) => {
       </div>
       <div className="text-center">
         <p>{course}</p>
+      </div>
+      <div className="text-center">
+        <p>{details}</p>
       </div>
     </div>
   );
